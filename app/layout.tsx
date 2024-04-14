@@ -18,7 +18,7 @@ export const metadata = {
   },
   description: 'Chat alimentado com inteligencia artificial.',
   icons: {
-    icon: '/favicon.ico'
+    icon: '/favicon.png'
   }
 }
 
