@@ -24,15 +24,15 @@ export function EmptyScreen() {
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
         <h1 className="text-lg font-semibold">
-          Bem vindo ao WKLR,um chat totalmente alimentado por I.A 
+          Bem vindo ao WKLR, um Chatbot totalmente alimentado por I.A 
         </h1>
         <p className="leading-normal text-muted-foreground">
           Ele usa{' '}
           <ExternalLink href="https://vercel.com/blog/ai-sdk-3-generative-ui">
           Componentes React
           </ExternalLink>{' '}
-          para combinar texto com UI generativa como saída do LLM.
-              Está i.a é sincronizada por meio de um SDK para que o modelo esteja ciente de suas interações
+          para combinar texto com I.a generativa.
+          Está i.a é sincronizada por meio de um SDK para que o modelo esteja ciente de suas interações
           à medida que acontecem.
         </p>
       </div>
