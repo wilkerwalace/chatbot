@@ -45,7 +45,7 @@ export async function removeChat({ id, path }: { id: string; path: string }) {
 
   if (!session) {
     return {
-      error: 'Unauthorized'
+      error: 'Sem autorização'
     }
   }
 
@@ -54,7 +54,7 @@ export async function removeChat({ id, path }: { id: string; path: string }) {
 
   if (uid !== session?.user?.id) {
     return {
-      error: 'Unauthorized'
+      error: 'Sem autorização'
     }
   }
 
@@ -70,7 +70,7 @@ export async function clearChats() {
 
   if (!session?.user?.id) {
     return {
-      error: 'Unauthorized'
+      error: 'Sem autorização'
     }
   }
 
@@ -106,7 +106,7 @@ export async function shareChat(id: string) {
 
   if (!session?.user?.id) {
     return {
-      error: 'Unauthorized'
+      error: 'Sem autorização'
     }
   }
 
@@ -114,7 +114,7 @@ export async function shareChat(id: string) {
 
   if (!chat || chat.userId !== session.user.id) {
     return {
-      error: 'Something went wrong'
+      error: 'Algo correu errado.'
     }
   }
 

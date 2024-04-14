@@ -30,7 +30,7 @@ export default function SignupForm() {
       className="flex flex-col items-center gap-4 space-y-3"
     >
       <div className="w-full flex-1 rounded-lg border bg-white px-6 pb-4 pt-8 shadow-md md:w-96 dark:bg-zinc-950">
-        <h1 className="mb-3 text-2xl font-bold">Sign up for an account!</h1>
+        <h1 className="mb-3 text-2xl font-bold">Crie uma conta!</h1>
         <div className="w-full">
           <div>
             <label
@@ -45,7 +45,7 @@ export default function SignupForm() {
                 id="email"
                 type="email"
                 name="email"
-                placeholder="Enter your email address"
+                placeholder="Digite seu endereço de email."
                 required
               />
             </div>
@@ -55,7 +55,7 @@ export default function SignupForm() {
               className="mb-3 mt-5 block text-xs font-medium text-zinc-400"
               htmlFor="password"
             >
-              Password
+              Senha
             </label>
             <div className="relative">
               <input
@@ -63,7 +63,7 @@ export default function SignupForm() {
                 id="password"
                 type="password"
                 name="password"
-                placeholder="Enter password"
+                placeholder="Digite sua senha."
                 required
                 minLength={6}
               />
@@ -74,8 +74,8 @@ export default function SignupForm() {
       </div>
 
       <Link href="/login" className="flex flex-row gap-1 text-sm text-zinc-400">
-        Already have an account?
-        <div className="font-semibold underline">Log in</div>
+        Já tem uma conta?
+        <div className="font-semibold underline">Login</div>
       </Link>
     </form>
   )

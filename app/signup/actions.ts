@@ -30,7 +30,7 @@ export async function createUser(
     await kv.hmset(`user:${email}`, user)
 
     return {
-      type: 'success',
+      type: 'sucesso',
       resultCode: ResultCode.UserCreated
     }
   }

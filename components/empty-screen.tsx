@@ -6,16 +6,16 @@ import { IconArrowRight } from '@/components/ui/icons'
 
 const exampleMessages = [
   {
-    heading: 'Explain technical concepts',
-    message: `What is a "serverless function"?`
+    heading: 'Explique os conceitos técnicos',
+    message: `O quê é "serverless function"?`
   },
   {
-    heading: 'Summarize an article',
-    message: 'Summarize the following article for a 2nd grader: \n'
+    heading: 'Resuma um artigo',
+    message: 'Resuma o seguinte arquivo para uma criança ler: \n'
   },
   {
-    heading: 'Draft an email',
-    message: `Draft an email to my boss about the following: \n`
+    heading: 'Escreva um email',
+    message: `Escreva um email para meu chefe sobre o seguinte: \n`
   }
 ]
 
@@ -24,28 +24,16 @@ export function EmptyScreen() {
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
         <h1 className="text-lg font-semibold">
-          Welcome to Next.js AI Chatbot!
+          Bem vindo ao WKLR,um chat totalmente alimentado por I.A 
         </h1>
         <p className="leading-normal text-muted-foreground">
-          This is an open source AI chatbot app template built with{' '}
-          <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>, the{' '}
-          <ExternalLink href="https://sdk.vercel.ai">
-            Vercel AI SDK
-          </ExternalLink>
-          , and{' '}
-          <ExternalLink href="https://vercel.com/storage/kv">
-            Vercel KV
-          </ExternalLink>
-          .
-        </p>
-        <p className="leading-normal text-muted-foreground">
-          It uses{' '}
+          Ele usa{' '}
           <ExternalLink href="https://vercel.com/blog/ai-sdk-3-generative-ui">
-            React Server Components
+          Componentes React
           </ExternalLink>{' '}
-          to combine text with generative UI as output of the LLM. The UI state
-          is synced through the SDK so the model is aware of your interactions
-          as they happen.
+          para combinar texto com UI generativa como saída do LLM.
+              Está i.a é sincronizada por meio de um SDK para que o modelo esteja ciente de suas interações
+          à medida que acontecem.
         </p>
       </div>
     </div>

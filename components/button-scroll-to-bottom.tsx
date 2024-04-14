@@ -30,7 +30,7 @@ export function ButtonScrollToBottom({
       {...props}
     >
       <IconArrowDown />
-      <span className="sr-only">Scroll to bottom</span>
+      <span className="sr-only">Rolar para o fim</span>
     </Button>
   )
 }

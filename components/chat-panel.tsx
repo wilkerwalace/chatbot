@@ -36,24 +36,24 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'What are the',
-      subheading: 'trending memecoins today?',
-      message: `What are the trending memecoins today?`
+      heading: 'Quais são as',
+      subheading: 'notícias de hoje?',
+      message: `Quais são as notícias de hoje?`
     },
     {
-      heading: 'What is the price of',
-      subheading: '$DOGE right now?',
-      message: 'What is the price of $DOGE right now?'
+      heading: 'Quanto custa',
+      subheading: 'uma faculdade de S.I',
+      message: 'Quanto custa uma faculdade de S.I hoje?'
     },
     {
-      heading: 'I would like to buy',
-      subheading: '42 $DOGE',
-      message: `I would like to buy 42 $DOGE`
+      heading: 'Eu gostaria de',
+      subheading: 'fazer um curso',
+      message: `Eu gostaria de fazer um curso gratuito`
     },
     {
-      heading: 'What are some',
-      subheading: `recent events about $DOGE?`,
-      message: `What are some recent events about $DOGE?`
+      heading: 'Quais os',
+      subheading: `eventos na minha cidade?`,
+      message: `Quais os principais eventos da minha cidade`
     }
   ]
 
@@ -110,7 +110,7 @@ export function ChatPanel({
                     onClick={() => setShareDialogOpen(true)}
                   >
                     <IconShare className="mr-2" />
-                    Share
+                    Compartilhar
                   </Button>
                   <ChatShareDialog
                     open={shareDialogOpen}

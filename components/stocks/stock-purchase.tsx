@@ -71,7 +71,7 @@ export function Purchase({
       ) : status === 'requires_action' ? (
         <>
           <div className="relative mt-6 pb-6">
-            <p>Shares to purchase</p>
+            <p>Ações para comprar</p>
             <input
               id="labels-range-input"
               type="range"
@@ -96,19 +96,19 @@ export function Purchase({
           </div>
 
           <div className="mt-6">
-            <p>Total cost</p>
+            <p>Custo Total</p>
             <div className="flex flex-wrap items-center text-xl font-bold sm:items-end sm:gap-2 sm:text-3xl">
               <div className="flex basis-1/3 flex-col tabular-nums sm:basis-auto sm:flex-row sm:items-center sm:gap-2">
                 {value}
                 <span className="mb-1 text-sm font-normal text-zinc-600 sm:mb-0 dark:text-zinc-400">
-                  shares
+                  Ações
                 </span>
               </div>
               <div className="basis-1/3 text-center sm:basis-auto">×</div>
               <span className="flex basis-1/3 flex-col tabular-nums sm:basis-auto sm:flex-row sm:items-center sm:gap-2">
                 ${price}
                 <span className="mb-1 ml-1 text-sm font-normal text-zinc-600 sm:mb-0 dark:text-zinc-400">
-                  per share
+                  por Ação
                 </span>
               </span>
               <div className="mt-2 basis-full border-t border-t-zinc-700 pt-2 text-center sm:mt-0 sm:basis-auto sm:border-0 sm:pt-0 sm:text-left">
@@ -130,16 +130,16 @@ export function Purchase({
               ])
             }}
           >
-            Purchase
+            Comprar
           </button>
         </>
       ) : status === 'completed' ? (
         <p className="mb-2 text-white">
-          You have successfully purchased {value} ${symbol}. Total cost:{' '}
+          Você comprou com sucesso {value} ${symbol}. Custo Total:{' '}
           {formatNumber(value * price)}
         </p>
       ) : status === 'expired' ? (
-        <p className="mb-2 text-white">Your checkout session has expired!</p>
+        <p className="mb-2 text-white">Sua sessão de Checkout expirou!</p>
       ) : null}
     </div>
   )
